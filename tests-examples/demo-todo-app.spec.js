@@ -21,7 +21,7 @@ test.describe('New Todo', () => {
     await newTodo.press('Enter');
 
     // Make sure the list only has one todo item.
-    await expect(page.getByTestId('todo-title')).toHaveText([
+    await expect(page.getByTestId('todo-')).toHaveText([
       TODO_ITEMS[0]
     ]);
 
